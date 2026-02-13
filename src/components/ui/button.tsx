@@ -10,24 +10,24 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-gradient-to-b from-blue-600 to-blue-700 text-primary-foreground hover:from-blue-700 hover:to-blue-700",
+          "bg-gradient-to-b from-siemens-500 to-siemens-600 text-white border-siemens-600 hover:from-siemens-600 hover:to-siemens-700",
         destructive:
-        "bg-gradient-to-b from-amber-600 to-amber-700 text-destructive-foreground hover:from-amber-700 hover:to-amber-700",
+          "bg-gradient-to-b from-amber-600 to-amber-700 text-destructive-foreground hover:from-amber-700 hover:to-amber-700",
         outline:
           "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
         secondary:
-        "bg-white text-black hover:bg-neutral-100",
+          "bg-white text-black hover:bg-neutral-100",
         ghost: "border-transparent shadow-none hover:bg-neutral-100 hover:text-neutral-900",
-        link: "text-primary underline-offset-4 hover:underline",
+        link: "text-siemens-600 underline-offset-4 hover:underline border-transparent",
         muted: "bg-neutral-100 text-neutral-900 hover:bg-neutral-200/80",
-        tertiary: "bg-blue-100 text-blue-900 border-transparent hover:bg-blue-200/80 shadow-none",
+        tertiary: "bg-siemens-50 text-siemens-700 border-transparent hover:bg-siemens-100 shadow-none",
        
       },
       size: {
         default: "h-11 px-4 py-2",
         sm: "h-8 rounded-md px-3",
         xs: "h-7 rounded-md px-2 text-xs",
-        lg: "h-13 rounded-md px-8",
+        lg: "h-12 rounded-md px-8",
         icon: "h-8 w-8",
       },
     },
