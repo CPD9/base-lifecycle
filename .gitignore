@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+<<<<<<< HEAD
+=======
+.yarn/install-state.gz
+>>>>>>> 3abb3ff (Initial commit from Create Next App)
 
 # testing
 /coverage
@@ -26,7 +30,10 @@ yarn-error.log*
 
 # local env files
 .env*.local
+<<<<<<< HEAD
 .env
+=======
+>>>>>>> 3abb3ff (Initial commit from Create Next App)
 
 # vercel
 .vercel
