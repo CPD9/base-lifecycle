@@ -23,27 +23,27 @@ import {
   FormItem, 
   FormMessage,
 } from "@/components/ui/form";
+import { loginSchema } from "../schemas";
+import { useLogin } from "../api/use-login";
 
-
-const formSchema = z.object({
-  email: z.string().email(),
-  password: z.string().min(8, "Password is required").max(16, "Password must be less than 16 characters").regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/, "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character"),
-});
 
 export default function SignInCard() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const { mutate } = useLogin();
+  const form = useForm<z.infer<typeof loginSchema>>({
+    resolver: zodResolver(loginSchema),
     defaultValues: {
       email: "",
       password: "",
     },
   });
 
-  const onSubmit = (data: z.infer<typeof formSchema>) => {
-    console.log(data);
+  const onSubmit = (values: z.infer<typeof loginSchema>) => {
+    mutate({
+      json: values
+    });
   };
 
-  const onError = (errors: FieldErrors<z.infer<typeof formSchema>>) => {
+  const onError = (errors: FieldErrors<z.infer<typeof loginSchema>>) => {
     console.log(errors);
   };
 
