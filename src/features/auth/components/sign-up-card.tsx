@@ -22,23 +22,14 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
+import { registerSchema } from "../schemas";
+import { useRegister } from "../api/use-register";
 
-const formSchema = z.object({
-  name: z.string().trim().min(1, "Name is required"),
-  email: z.string().email(),
-  password: z
-    .string()
-    .min(8, "Password is required")
-    .max(16, "Password must be less than 16 characters")
-    .regex(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/,
-      "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character"
-    ),
-});
 
 export default function SignUpCard() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const { mutate } = useRegister();
+  const form = useForm<z.infer<typeof registerSchema>>({
+    resolver: zodResolver(registerSchema),
     defaultValues: {
       name: "",
       email: "",
@@ -46,12 +37,12 @@ export default function SignUpCard() {
     },
   });
 
-  const onSubmit = (data: z.infer<typeof formSchema>) => {
-    console.log(data);
+  const onSubmit = (values: z.infer<typeof registerSchema>) => {
+    mutate({ json: values });
   };
 
-  const onError = (errors: FieldErrors<z.infer<typeof formSchema>>) => {
-    console.log(errors);
+  const onError = (errors: FieldErrors<z.infer<typeof registerSchema>>) => {
+    console.error(errors);
   };
 
 
