@@ -62,7 +62,11 @@ src/
     (standalone)/         # Settings and onboarding pages
     api/[[...route]]/     # Hono.js catch-all API handler
   features/               # Domain modules (feature-based architecture)
-    auth/                 # Authentication logic, components, schemas
+    auth/                 # Authentication logic, components, schemas, server actions
+      api/                # React Query hooks (useLogin, useRegister, useLogout, useCurrent)
+      server/             # Hono API routes for auth endpoints
+      components/         # Auth UI (sign-in/sign-up cards, user button)
+      actions.ts          # Server actions for route protection
     parts/                # Part registration and management (planned)
     locations/            # Location hierarchy and tracking (planned)
     members/              # Team and role management (planned)
@@ -75,6 +79,7 @@ src/
     query-provider.tsx    # React Query client provider
   lib/
     appwrite.ts           # Appwrite admin client (server-only)
+    session-middleware.ts  # Hono middleware for session validation
     rpc.ts                # Hono RPC client for type-safe API calls
     utils.ts              # cn() helper and shared utilities
   config/                 # Environment constants and collection IDs
@@ -100,7 +105,8 @@ The system supports four Siemens numbering conventions:
 | v0.1.0 | `v0.1.0` | Project scaffold, Shadcn UI component library |
 | v0.2.0 | `v0.2.0` | Auth screens, Siemens branding, form validation |
 | v0.3.0 | `v0.3.0` | Hono API setup, auth API, RPC client, query provider |
-| v0.4.0 | *in progress* | Appwrite integration, session auth, cookie management |
+| v0.4.0 | `v0.4.0` | Appwrite integration, session middleware, route protection |
+| v0.5.0 | *in progress* | Dashboard layout, sidebar navigation, workspace structure |
 
 ## Branching Strategy
 

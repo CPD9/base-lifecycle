@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple, FaMicrosoft, FaGithub } from "react-icons/fa";
@@ -27,7 +29,7 @@ import { useRegister } from "../api/use-register";
 
 
 export default function SignUpCard() {
-  const { mutate } = useRegister();
+  const { mutate, isPending } = useRegister();
   const form = useForm<z.infer<typeof registerSchema>>({
     resolver: zodResolver(registerSchema),
     defaultValues: {
@@ -116,7 +118,7 @@ export default function SignUpCard() {
                 </FormItem>
               )}
             />
-            <Button disabled={false} size="lg" className="w-full" type="submit">
+            <Button disabled={isPending} size="lg" className="w-full" type="submit">
               Sign up
             </Button>
           </form>
@@ -127,7 +129,7 @@ export default function SignUpCard() {
       </div>
       <CardContent className="p-7 flex flex-col gap-y-4">
         <Button
-          disabled={false}
+          disabled={isPending}
           size="lg"
           className="w-full"
           variant="secondary"
@@ -137,7 +139,7 @@ export default function SignUpCard() {
           </span>
           Sign up with Google
         </Button>
-        <Button disabled={false} size="lg" className="w-full" variant="secondary">
+        <Button disabled={isPending} size="lg" className="w-full" variant="secondary">
           <span className="mr-2">
             <FaGithub size={20} />
           </span>
@@ -149,7 +151,7 @@ export default function SignUpCard() {
           </span>
           Sign up with Apple
         </Button>
-        <Button disabled={false} size="lg" className="w-full" variant="secondary">
+        <Button disabled={isPending} size="lg" className="w-full" variant="secondary">
           <span className="mr-2">
             <FaMicrosoft size={20} />
           </span>

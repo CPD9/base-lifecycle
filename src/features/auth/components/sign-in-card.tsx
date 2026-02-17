@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple, FaMicrosoft, FaGithub } from "react-icons/fa";
@@ -28,7 +30,7 @@ import { useLogin } from "../api/use-login";
 
 
 export default function SignInCard() {
-  const { mutate } = useLogin();
+  const { mutate, isPending } = useLogin();
   const form = useForm<z.infer<typeof loginSchema>>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
@@ -95,7 +97,7 @@ export default function SignInCard() {
                 </FormItem>
               )}
             />
-            <Button disabled={false} size="lg" className="w-full" type="submit">
+            <Button disabled={isPending} size="lg" className="w-full" type="submit">
               Login
             </Button>
           </form>
@@ -106,7 +108,7 @@ export default function SignInCard() {
       </div>
       <CardContent className="p-7 flex flex-col gap-y-4">
         <Button
-          disabled={false}
+          disabled={isPending}
           size="lg"
           className="w-full"
           variant="secondary"
@@ -116,19 +118,19 @@ export default function SignInCard() {
           </span>
           Login with Google
         </Button>
-        <Button disabled={false} size="lg" className="w-full" variant="secondary">
+        <Button disabled={isPending} size="lg" className="w-full" variant="secondary">
           <span className="mr-2">
             <FaGithub size={20} />
           </span>
           Login with Github
         </Button>
-        <Button disabled={false} size="lg" className="w-full" variant="secondary">
+        <Button disabled={isPending} size="lg" className="w-full" variant="secondary">
           <span className="mr-2">
             <FaApple size={20} />
           </span>
           Login with Apple
         </Button>
-        <Button disabled={false} size="lg" className="w-full" variant="secondary">
+        <Button disabled={isPending} size="lg" className="w-full" variant="secondary">
           <span className="mr-2">
             <FaMicrosoft size={20} />
           </span>

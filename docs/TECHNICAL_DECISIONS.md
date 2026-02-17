@@ -56,7 +56,7 @@ Next.js is the production framework for React. It provides server-side rendering
 **Why version 14 specifically?**
 
 - v14 is the latest stable release in the App Router lineage before the v15 breaking changes.
-- The tutorial reference material targets v14, keeping our learning and codebase aligned.
+- v14 is the version our team has the most experience with, keeping development velocity high.
 - v14 has mature community support and well-documented patterns.
 
 **Why App Router over Pages Router?**
@@ -325,8 +325,8 @@ branch.main.mergeoptions = --no-ff  # Merge commits on main preserve feature bou
 | v0.1.0 | `feature/project-setup` | Project scaffold, Shadcn UI, component library |
 | v0.2.0 | `feature/auth-screens` | Auth screens, Siemens branding, form validation |
 | v0.3.0 | `feature/auth-api` | Hono API, auth routes, RPC client, query provider |
-| v0.4.0 | `feature/db-schema` | Appwrite integration, session auth, cookie management, database setup |
-| v0.5.0 | `feature/core-layout` | Dashboard layout, sidebar, standalone layout |
+| v0.4.0 | `feature/session-middleware` | Appwrite integration, session middleware, route protection, user context |
+| v0.5.0 | `feature/dashboard-layout` | Dashboard layout, sidebar navigation, workspace structure |
 | v0.6.0 | `feature/part-registration` | Part CRUD, number validation, image upload |
 | v0.7.0 | `feature/location-tracking` | Location hierarchy, installation tracking |
 | v0.8.0 | `feature/search-filter` | Multi-format search, filtering, data tables |
