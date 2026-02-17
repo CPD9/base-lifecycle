@@ -94,17 +94,28 @@ Hono is a lightweight, high-performance web framework designed for edge runtimes
 
 ## 4. Backend-as-a-Service
 
-### Decision: Appwrite (planned)
+### Decision: Appwrite (Cloud, Frankfurt region)
 
 **Why Appwrite?**
 
 Appwrite is an open-source Backend-as-a-Service providing authentication, databases, storage, and serverless functions. We chose it because:
 
-- **Self-hostable** -- Critical for a Siemens project where data sovereignty matters. We can deploy Appwrite on Siemens infrastructure rather than sending railway data to a third-party cloud.
+- **Self-hostable** -- Critical for a Siemens project where data sovereignty matters. We can deploy Appwrite on Siemens infrastructure rather than sending railway data to a third-party cloud. Currently using Appwrite Cloud (Frankfurt endpoint: `fra.cloud.appwrite.io`) for development.
 - **Built-in auth** -- OAuth (Google, GitHub, Microsoft, Apple) and email/password authentication with session management, so we do not build auth from scratch.
 - **Document database** -- Flexible schema that fits our domain well: parts, locations, installations, and members are naturally document-shaped with varying attributes.
 - **File storage** -- Built-in image/document storage with access controls for component photos and attachments.
 - **SDKs** -- `node-appwrite` (server-side, admin operations) and `appwrite` (client-side, session-scoped) provide typed APIs.
+
+**Implementation details:**
+
+- **Admin client** (`src/lib/appwrite.ts`): Server-only module using `node-appwrite@14.0.0` to create an admin client with the project API key. Uses lazy getters for `Account`, `Storage`, `Users`, and `Databases` services. Protected with `server-only` to prevent accidental client bundle inclusion.
+- **Session cookie** (`AUTH_COOKIE_NAME: "base-lifecycle-session-cookie"`): After login or registration, the Appwrite session secret is stored as an httpOnly, secure, strict sameSite cookie with a 30-day expiry. This keeps sessions server-managed and immune to XSS.
+- **Auth routes**: Login creates an email/password session, register creates an account then a session, logout deletes the current session and clears the cookie.
+
+**Environment variables:**
+- `NEXT_PUBLIC_APPWRITE_ENDPOINT` -- Appwrite API endpoint (public, needed by client)
+- `NEXT_PUBLIC_APPWRITE_PROJECT` -- Appwrite project ID (public)
+- `NEXT_APPWRITE_KEY` -- Appwrite API key (server-only, no `NEXT_PUBLIC_` prefix)
 
 **Alternatives considered:**
 - `Supabase` -- PostgreSQL-based, excellent for relational data. Strong contender, but Appwrite's self-hosting story is simpler and we do not need SQL joins for our primary access patterns.
@@ -313,8 +324,8 @@ branch.main.mergeoptions = --no-ff  # Merge commits on main preserve feature bou
 |---------|--------|-------------|
 | v0.1.0 | `feature/project-setup` | Project scaffold, Shadcn UI, component library |
 | v0.2.0 | `feature/auth-screens` | Auth screens, Siemens branding, form validation |
-| v0.3.0 | `feature/auth-api` | Hono API, auth API, Appwrite setup, session middleware |
-| v0.4.0 | `feature/db-schema` | Appwrite collections, part number schemas, data model |
+| v0.3.0 | `feature/auth-api` | Hono API, auth routes, RPC client, query provider |
+| v0.4.0 | `feature/db-schema` | Appwrite integration, session auth, cookie management, database setup |
 | v0.5.0 | `feature/core-layout` | Dashboard layout, sidebar, standalone layout |
 | v0.6.0 | `feature/part-registration` | Part CRUD, number validation, image upload |
 | v0.7.0 | `feature/location-tracking` | Location hierarchy, installation tracking |
@@ -348,6 +359,12 @@ branch.main.mergeoptions = --no-ff  # Merge commits on main preserve feature bou
 | `next-themes` | ^0.4.6 | Dark/light theme management |
 | `vaul` | ^1.1.2 | Drawer component primitive |
 | `embla-carousel-react` | ^8.6.0 | Carousel component primitive |
+| `hono` | 4.6.3 | Lightweight API framework for catch-all API route |
+| `@hono/zod-validator` | 0.7.6 | Request body validation with Zod at the API boundary |
+| `@tanstack/react-query` | 5.59.0 | Server state management, caching, background refetch |
+| `node-appwrite` | 14.0.0 | Appwrite server SDK for admin operations (auth, database) |
+| `server-only` | 0.0.1 | Prevents server code from leaking into client bundles |
+| `react-icons` | 5.5.0 | Icon library for OAuth provider buttons |
 | **Radix UI primitives** | various | Accessible UI primitives for Shadcn components |
 
 *Radix packages:* `@radix-ui/react-avatar`, `@radix-ui/react-checkbox`, `@radix-ui/react-dialog`, `@radix-ui/react-dropdown-menu`, `@radix-ui/react-label`, `@radix-ui/react-popover`, `@radix-ui/react-scroll-area`, `@radix-ui/react-select`, `@radix-ui/react-separator`, `@radix-ui/react-slot`, `@radix-ui/react-tabs`, `@radix-ui/react-tooltip`
@@ -369,14 +386,9 @@ branch.main.mergeoptions = --no-ff  # Merge commits on main preserve feature bou
 
 | Package | Purpose |
 |---------|---------|
-| `hono` | Lightweight API framework for the catch-all route |
-| `@hono/zod-validator` | Request body validation with Zod at the API boundary |
-| `node-appwrite` | Appwrite server SDK (admin operations) |
 | `appwrite` | Appwrite client SDK (session-scoped operations) |
-| `@tanstack/react-query` | Server state management, caching, background refetch |
 | `zustand` | Client-side UI state management |
 | `nuqs` | URL query string state for search/filter |
-| `server-only` | Prevents server code from leaking into client bundles |
 
 ---
 

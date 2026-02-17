@@ -1,0 +1,1 @@
+export const AUTH_COOKIE_NAME = "base-lifecycle-session-cookie";

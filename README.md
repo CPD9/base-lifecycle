@@ -25,6 +25,7 @@ Railway infrastructure installed base is currently managed in Excel spreadsheets
 
 - [Bun](https://bun.sh) (v1.3+)
 - [Node.js](https://nodejs.org) (v20 LTS, installed via nvm)
+- [Appwrite](https://appwrite.io) account (Cloud or self-hosted)
 
 ### Installation
 
@@ -37,6 +38,8 @@ bun install
 ### Development
 
 ```bash
+cp .env.local.example .env.local
+# Fill in your Appwrite credentials
 bun run dev
 ```
 
@@ -70,7 +73,10 @@ src/
     ui/                   # Shadcn UI component library
     dotted-separator.tsx  # Custom shared components
     query-provider.tsx    # React Query client provider
-  lib/                    # Utilities (cn helper, Appwrite client, etc.)
+  lib/
+    appwrite.ts           # Appwrite admin client (server-only)
+    rpc.ts                # Hono RPC client for type-safe API calls
+    utils.ts              # cn() helper and shared utilities
   config/                 # Environment constants and collection IDs
   hooks/                  # Shared React hooks
   types/                  # Shared TypeScript type definitions
@@ -93,7 +99,8 @@ The system supports four Siemens numbering conventions:
 |---------|-----|-------------|
 | v0.1.0 | `v0.1.0` | Project scaffold, Shadcn UI component library |
 | v0.2.0 | `v0.2.0` | Auth screens, Siemens branding, form validation |
-| v0.3.0 | *in progress* | Hono API setup, auth API, query provider |
+| v0.3.0 | `v0.3.0` | Hono API setup, auth API, RPC client, query provider |
+| v0.4.0 | *in progress* | Appwrite integration, session auth, cookie management |
 
 ## Branching Strategy
 
