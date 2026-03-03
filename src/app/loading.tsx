@@ -1,18 +1,13 @@
-import { redirect } from "next/navigation";
+"use client";
 
-import { UserButton } from "@/features/auth/components/user-button";
-import { protectRoute } from "@/features/auth/actions";
+import { Loader } from "lucide-react";
 
-export default async function Home() {
-  const user = await protectRoute();
-
-  if (!user) {
-    redirect("/sign-in");
-  }
-
-  return (
-    <div>
-      <UserButton />
+const LoadingPage = () => {
+  return ( 
+    <div className="h-screen flex flex-col items-center justify-center">
+      <Loader className="size-6 animate-spin text-muted-foreground" />
     </div>
   );
-}
+};
+ 
+export default LoadingPage;

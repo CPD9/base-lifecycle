@@ -38,7 +38,7 @@ function getQueryClient() {
 
 interface QueryProviderProps {
   children: React.ReactNode;
-}
+};
 
 export const QueryProvider = ({ children }: QueryProviderProps) => {
   // NOTE: Avoid useState when initializing the query client if you don't
