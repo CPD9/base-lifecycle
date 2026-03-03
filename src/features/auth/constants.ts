@@ -1,1 +1,1 @@
-export const AUTH_COOKIE_NAME = "base-lifecycle-session-cookie";
+export const AUTH_COOKIE = "cwa-jira-clone-session";
