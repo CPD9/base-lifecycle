@@ -1,61 +1,64 @@
+"use client";
+
 import Link from "next/link";
-import { SettingsIcon, UserIcon } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { SettingsIcon, UsersIcon } from "lucide-react";
 import { GoCheckCircle, GoCheckCircleFill, GoHome, GoHomeFill } from "react-icons/go";
+
+import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
+
 import { cn } from "@/lib/utils";
 
 const routes = [
-    {
-        label: "Home",
-        href: "/",
-        icon: GoHome,
-        activeIcon: GoHomeFill,
-        isActive: true,
-    },
-    {
-        label: "My Devices",
-        href: "/devices",
-        icon: GoCheckCircle,
-        activeIcon: GoCheckCircleFill,
-        isActive: false,
-    },
-    {
-        label: "Settings",
-        href: "/settings",
-        icon: SettingsIcon,
-        activeIcon: SettingsIcon,
-        isActive: false,
-    },
-    {
-        label: "Members",
-        href: "/Members",
-        icon: UserIcon,
-        activeIcon: UserIcon,
-        isActive: false,
-    },
+  {
+    label: "Home",
+    href: "",
+    icon: GoHome,
+    activeIcon: GoHomeFill,
+  },
+  {
+    label: "My Devices",
+    href: "/devices",
+    icon: GoCheckCircle,
+    activeIcon: GoCheckCircleFill,
+  },
+  {
+    label: "Settings",
+    href: "/settings",
+    icon: SettingsIcon,
+    activeIcon: SettingsIcon,
+  },
+  {
+    label: "Members",
+    href: "/members",
+    icon: UsersIcon,
+    activeIcon: UsersIcon,
+  },
 ];
 
 export const Navigation = () => {
-    return (
-        <ul className="flex flex-col">
-            {routes.map((item) => {
-                const isActive = false;
-                const Icon = isActive ? item.activeIcon : item.icon;
+  const workspaceId = useWorkspaceId();
+  const pathname = usePathname();
 
-                return (
-                    <li key={item.href}>
-                        <Link href={item.href} className="flex items-center gap-2">
-                            <div className={cn(
-                                "flex items-center gap-2.5 p-2.5 rounded-md font-medium hover:text-primary transition text-neutral-500"
-                                , isActive && "bg-white-200 shadow-sm hover:opacity-100 text-primary")}>
-                                <Icon className="w-4 h-4" />
-                                <span className="text-sm font-medium">{item.label}</span>
-                            </div>
-                            <Icon className="w-4 h-4" />
-                            <span className="text-sm font-medium">{item.label}</span>
-                        </Link>
-                    </li>
-                );
-            })}
-        </ul>
-    );
+  return (
+    <ul className="flex flex-col">
+      {routes.map((item) => {
+        const fullHref = `/workspaces/${workspaceId}${item.href}`
+        const isActive = pathname === fullHref;
+        const Icon = isActive ? item.activeIcon : item.icon;
+        
+        return (
+          <Link key={item.href} href={fullHref}>
+            <div className={cn(
+              "flex items-center gap-2.5 p-2.5 rounded-md font-medium hover:text-primary transition text-neutral-500",
+              isActive && "bg-white shadow-sm hover:opacity-100 text-primary"
+            )}>
+              <Icon className="size-5 text-neutral-500" />
+              {item.label}
+            </div>
+          </Link>
+        )
+      })}
+    </ul>
+  );
 };
