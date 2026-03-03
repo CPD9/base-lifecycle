@@ -1,0 +1,101 @@
+workspaceId,name,projectId,assigneeId,description,dueDate,status,position
+69a7071f0022224130e9,Service check - SIMI W 01,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMI W 01 at OBB.,2026-03-12,BACKLOG,2000
+69a7071f0022224130e9,Service check - SIMIS C 02,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMIS C 02 at Bern SBB.,2026-03-14,TODO,3000
+69a7071f0022224130e9,Service check - SICAS S7 03,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SICAS S7 03 at SBB.,2026-03-16,IN_PROGRESS,4000
+69a7071f0022224130e9,Service check - ESTW L90 04,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ESTW L90 04 at SBB Luzern.,2026-03-18,IN_REVIEW,5000
+69a7071f0022224130e9,Service check - RBC Unit 05,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for RBC Unit 05 at SBB Basel.,2026-03-20,DONE,6000
+69a7071f0022224130e9,Service check - Axle Counter ACM 06,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Axle Counter ACM 06 at SBB Lausanne.,2026-03-22,BACKLOG,7000
+69a7071f0022224130e9,Service check - Interlocking CPU 07,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Interlocking CPU 07 at OBB.,2026-03-24,TODO,8000
+69a7071f0022224130e9,Service check - Balise Reader 08,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Balise Reader 08 at Bern SBB.,2026-03-26,IN_PROGRESS,9000
+69a7071f0022224130e9,Service check - Signal Controller 09,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Signal Controller 09 at SBB.,2026-03-28,IN_REVIEW,10000
+69a7071f0022224130e9,Service check - Track Circuit Unit 10,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Track Circuit Unit 10 at SBB Luzern.,2026-03-30,DONE,11000
+69a7071f0022224130e9,Service check - PROSIM-LMU 11,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for PROSIM-LMU 11 at SBB Basel.,2026-04-01,BACKLOG,12000
+69a7071f0022224130e9,Service check - ETCS Interface 12,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ETCS Interface 12 at SBB Lausanne.,2026-04-03,TODO,13000
+69a7071f0022224130e9,Service check - SIMI W 13,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMI W 13 at OBB.,2026-04-05,IN_PROGRESS,14000
+69a7071f0022224130e9,Service check - SIMIS C 14,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMIS C 14 at Bern SBB.,2026-04-07,IN_REVIEW,15000
+69a7071f0022224130e9,Service check - SICAS S7 15,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SICAS S7 15 at SBB.,2026-04-09,DONE,16000
+69a7071f0022224130e9,Service check - ESTW L90 16,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ESTW L90 16 at SBB Luzern.,2026-04-11,BACKLOG,17000
+69a7071f0022224130e9,Service check - RBC Unit 17,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for RBC Unit 17 at SBB Basel.,2026-04-13,TODO,18000
+69a7071f0022224130e9,Service check - Axle Counter ACM 18,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Axle Counter ACM 18 at SBB Lausanne.,2026-04-15,IN_PROGRESS,19000
+69a7071f0022224130e9,Service check - Interlocking CPU 19,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Interlocking CPU 19 at OBB.,2026-04-17,IN_REVIEW,20000
+69a7071f0022224130e9,Service check - Balise Reader 20,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Balise Reader 20 at Bern SBB.,2026-04-19,DONE,21000
+69a7071f0022224130e9,Service check - Signal Controller 21,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Signal Controller 21 at SBB.,2026-04-21,BACKLOG,22000
+69a7071f0022224130e9,Service check - Track Circuit Unit 22,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Track Circuit Unit 22 at SBB Luzern.,2026-04-23,TODO,23000
+69a7071f0022224130e9,Service check - PROSIM-LMU 23,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for PROSIM-LMU 23 at SBB Basel.,2026-04-25,IN_PROGRESS,24000
+69a7071f0022224130e9,Service check - ETCS Interface 24,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ETCS Interface 24 at SBB Lausanne.,2026-04-27,IN_REVIEW,25000
+69a7071f0022224130e9,Service check - SIMI W 25,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMI W 25 at OBB.,2026-04-29,DONE,26000
+69a7071f0022224130e9,Service check - SIMIS C 01,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMIS C 01 at Bern SBB.,2026-05-01,BACKLOG,27000
+69a7071f0022224130e9,Service check - SICAS S7 02,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SICAS S7 02 at SBB.,2026-05-03,TODO,28000
+69a7071f0022224130e9,Service check - ESTW L90 03,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ESTW L90 03 at SBB Luzern.,2026-05-05,IN_PROGRESS,29000
+69a7071f0022224130e9,Service check - RBC Unit 04,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for RBC Unit 04 at SBB Basel.,2026-05-07,IN_REVIEW,30000
+69a7071f0022224130e9,Service check - Axle Counter ACM 05,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Axle Counter ACM 05 at SBB Lausanne.,2026-05-09,DONE,31000
+69a7071f0022224130e9,Service check - Interlocking CPU 06,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Interlocking CPU 06 at OBB.,2026-05-11,BACKLOG,32000
+69a7071f0022224130e9,Service check - Balise Reader 07,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Balise Reader 07 at Bern SBB.,2026-05-13,TODO,33000
+69a7071f0022224130e9,Service check - Signal Controller 08,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Signal Controller 08 at SBB.,2026-05-15,IN_PROGRESS,34000
+69a7071f0022224130e9,Service check - Track Circuit Unit 09,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Track Circuit Unit 09 at SBB Luzern.,2026-05-17,IN_REVIEW,35000
+69a7071f0022224130e9,Service check - PROSIM-LMU 10,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for PROSIM-LMU 10 at SBB Basel.,2026-05-19,DONE,36000
+69a7071f0022224130e9,Service check - ETCS Interface 11,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ETCS Interface 11 at SBB Lausanne.,2026-05-21,BACKLOG,37000
+69a7071f0022224130e9,Service check - SIMI W 12,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMI W 12 at OBB.,2026-05-23,TODO,38000
+69a7071f0022224130e9,Service check - SIMIS C 13,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMIS C 13 at Bern SBB.,2026-05-25,IN_PROGRESS,39000
+69a7071f0022224130e9,Service check - SICAS S7 14,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SICAS S7 14 at SBB.,2026-05-27,IN_REVIEW,40000
+69a7071f0022224130e9,Service check - ESTW L90 15,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ESTW L90 15 at SBB Luzern.,2026-05-29,DONE,41000
+69a7071f0022224130e9,Service check - RBC Unit 16,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for RBC Unit 16 at SBB Basel.,2026-05-31,BACKLOG,42000
+69a7071f0022224130e9,Service check - Axle Counter ACM 17,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Axle Counter ACM 17 at SBB Lausanne.,2026-06-02,TODO,43000
+69a7071f0022224130e9,Service check - Interlocking CPU 18,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Interlocking CPU 18 at OBB.,2026-06-04,IN_PROGRESS,44000
+69a7071f0022224130e9,Service check - Balise Reader 19,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Balise Reader 19 at Bern SBB.,2026-06-06,IN_REVIEW,45000
+69a7071f0022224130e9,Service check - Signal Controller 20,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Signal Controller 20 at SBB.,2026-06-08,DONE,46000
+69a7071f0022224130e9,Service check - Track Circuit Unit 21,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Track Circuit Unit 21 at SBB Luzern.,2026-06-10,BACKLOG,47000
+69a7071f0022224130e9,Service check - PROSIM-LMU 22,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for PROSIM-LMU 22 at SBB Basel.,2026-06-12,TODO,48000
+69a7071f0022224130e9,Service check - ETCS Interface 23,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ETCS Interface 23 at SBB Lausanne.,2026-06-14,IN_PROGRESS,49000
+69a7071f0022224130e9,Service check - SIMI W 24,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMI W 24 at OBB.,2026-06-16,IN_REVIEW,50000
+69a7071f0022224130e9,Service check - SIMIS C 25,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMIS C 25 at Bern SBB.,2026-06-18,DONE,51000
+69a7071f0022224130e9,Service check - SICAS S7 01,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SICAS S7 01 at SBB.,2026-06-20,BACKLOG,52000
+69a7071f0022224130e9,Service check - ESTW L90 02,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ESTW L90 02 at SBB Luzern.,2026-06-22,TODO,53000
+69a7071f0022224130e9,Service check - RBC Unit 03,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for RBC Unit 03 at SBB Basel.,2026-06-24,IN_PROGRESS,54000
+69a7071f0022224130e9,Service check - Axle Counter ACM 04,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Axle Counter ACM 04 at SBB Lausanne.,2026-06-26,IN_REVIEW,55000
+69a7071f0022224130e9,Service check - Interlocking CPU 05,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Interlocking CPU 05 at OBB.,2026-06-28,DONE,56000
+69a7071f0022224130e9,Service check - Balise Reader 06,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Balise Reader 06 at Bern SBB.,2026-06-30,BACKLOG,57000
+69a7071f0022224130e9,Service check - Signal Controller 07,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Signal Controller 07 at SBB.,2026-07-02,TODO,58000
+69a7071f0022224130e9,Service check - Track Circuit Unit 08,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Track Circuit Unit 08 at SBB Luzern.,2026-07-04,IN_PROGRESS,59000
+69a7071f0022224130e9,Service check - PROSIM-LMU 09,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for PROSIM-LMU 09 at SBB Basel.,2026-07-06,IN_REVIEW,60000
+69a7071f0022224130e9,Service check - ETCS Interface 10,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ETCS Interface 10 at SBB Lausanne.,2026-07-08,DONE,61000
+69a7071f0022224130e9,Service check - SIMI W 11,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMI W 11 at OBB.,2026-07-10,BACKLOG,62000
+69a7071f0022224130e9,Service check - SIMIS C 12,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMIS C 12 at Bern SBB.,2026-07-12,TODO,63000
+69a7071f0022224130e9,Service check - SICAS S7 13,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SICAS S7 13 at SBB.,2026-07-14,IN_PROGRESS,64000
+69a7071f0022224130e9,Service check - ESTW L90 14,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ESTW L90 14 at SBB Luzern.,2026-07-16,IN_REVIEW,65000
+69a7071f0022224130e9,Service check - RBC Unit 15,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for RBC Unit 15 at SBB Basel.,2026-07-18,DONE,66000
+69a7071f0022224130e9,Service check - Axle Counter ACM 16,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Axle Counter ACM 16 at SBB Lausanne.,2026-07-20,BACKLOG,67000
+69a7071f0022224130e9,Service check - Interlocking CPU 17,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Interlocking CPU 17 at OBB.,2026-07-22,TODO,68000
+69a7071f0022224130e9,Service check - Balise Reader 18,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Balise Reader 18 at Bern SBB.,2026-07-24,IN_PROGRESS,69000
+69a7071f0022224130e9,Service check - Signal Controller 19,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Signal Controller 19 at SBB.,2026-07-26,IN_REVIEW,70000
+69a7071f0022224130e9,Service check - Track Circuit Unit 20,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Track Circuit Unit 20 at SBB Luzern.,2026-07-28,DONE,71000
+69a7071f0022224130e9,Service check - PROSIM-LMU 21,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for PROSIM-LMU 21 at SBB Basel.,2026-07-30,BACKLOG,72000
+69a7071f0022224130e9,Service check - ETCS Interface 22,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ETCS Interface 22 at SBB Lausanne.,2026-08-01,TODO,73000
+69a7071f0022224130e9,Service check - SIMI W 23,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMI W 23 at OBB.,2026-08-03,IN_PROGRESS,74000
+69a7071f0022224130e9,Service check - SIMIS C 24,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMIS C 24 at Bern SBB.,2026-08-05,IN_REVIEW,75000
+69a7071f0022224130e9,Service check - SICAS S7 25,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SICAS S7 25 at SBB.,2026-08-07,DONE,76000
+69a7071f0022224130e9,Service check - ESTW L90 01,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ESTW L90 01 at SBB Luzern.,2026-08-09,BACKLOG,77000
+69a7071f0022224130e9,Service check - RBC Unit 02,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for RBC Unit 02 at SBB Basel.,2026-08-11,TODO,78000
+69a7071f0022224130e9,Service check - Axle Counter ACM 03,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Axle Counter ACM 03 at SBB Lausanne.,2026-08-13,IN_PROGRESS,79000
+69a7071f0022224130e9,Service check - Interlocking CPU 04,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Interlocking CPU 04 at OBB.,2026-08-15,IN_REVIEW,80000
+69a7071f0022224130e9,Service check - Balise Reader 05,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Balise Reader 05 at Bern SBB.,2026-08-17,DONE,81000
+69a7071f0022224130e9,Service check - Signal Controller 06,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Signal Controller 06 at SBB.,2026-08-19,BACKLOG,82000
+69a7071f0022224130e9,Service check - Track Circuit Unit 07,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Track Circuit Unit 07 at SBB Luzern.,2026-08-21,TODO,83000
+69a7071f0022224130e9,Service check - PROSIM-LMU 08,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for PROSIM-LMU 08 at SBB Basel.,2026-08-23,IN_PROGRESS,84000
+69a7071f0022224130e9,Service check - ETCS Interface 09,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ETCS Interface 09 at SBB Lausanne.,2026-08-25,IN_REVIEW,85000
+69a7071f0022224130e9,Service check - SIMI W 10,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMI W 10 at OBB.,2026-08-27,DONE,86000
+69a7071f0022224130e9,Service check - SIMIS C 11,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMIS C 11 at Bern SBB.,2026-08-29,BACKLOG,87000
+69a7071f0022224130e9,Service check - SICAS S7 12,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SICAS S7 12 at SBB.,2026-08-31,TODO,88000
+69a7071f0022224130e9,Service check - ESTW L90 13,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ESTW L90 13 at SBB Luzern.,2026-09-02,IN_PROGRESS,89000
+69a7071f0022224130e9,Service check - RBC Unit 14,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for RBC Unit 14 at SBB Basel.,2026-09-04,IN_REVIEW,90000
+69a7071f0022224130e9,Service check - Axle Counter ACM 15,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Axle Counter ACM 15 at SBB Lausanne.,2026-09-06,DONE,91000
+69a7071f0022224130e9,Service check - Interlocking CPU 16,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Interlocking CPU 16 at OBB.,2026-09-08,BACKLOG,92000
+69a7071f0022224130e9,Service check - Balise Reader 17,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Balise Reader 17 at Bern SBB.,2026-09-10,TODO,93000
+69a7071f0022224130e9,Service check - Signal Controller 18,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Signal Controller 18 at SBB.,2026-09-12,IN_PROGRESS,94000
+69a7071f0022224130e9,Service check - Track Circuit Unit 19,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for Track Circuit Unit 19 at SBB Luzern.,2026-09-14,IN_REVIEW,95000
+69a7071f0022224130e9,Service check - PROSIM-LMU 20,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for PROSIM-LMU 20 at SBB Basel.,2026-09-16,DONE,96000
+69a7071f0022224130e9,Service check - ETCS Interface 21,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ETCS Interface 21 at SBB Lausanne.,2026-09-18,BACKLOG,97000
+69a7071f0022224130e9,Service check - SIMI W 22,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMI W 22 at OBB.,2026-09-20,TODO,98000
+69a7071f0022224130e9,Service check - SIMIS C 23,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SIMIS C 23 at Bern SBB.,2026-09-22,IN_PROGRESS,99000
+69a7071f0022224130e9,Service check - SICAS S7 24,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for SICAS S7 24 at SBB.,2026-09-24,IN_REVIEW,100000
+69a7071f0022224130e9,Service check - ESTW L90 25,69a7071f0022224130e9,69a7071f002c745ddabd,Lifecycle and compatibility check for ESTW L90 25 at SBB Luzern.,2026-09-26,DONE,101000

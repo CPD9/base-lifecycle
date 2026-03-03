@@ -12,7 +12,7 @@ import { generateInviteCode } from "@/lib/utils";
 import { sessionMiddleware } from "@/lib/session-middleware";
 import { DATABASE_ID, IMAGES_BUCKET_ID, MEMBERS_ID, TASKS_ID, WORKSPACES_ID } from "@/config";
 
-// import { Workspace } from "../types";
+import { Workspace } from "../types";
 import { createWorkspaceSchema, updateWorkspaceSchema } from "../schemas";
 
 const app = new Hono()
@@ -112,12 +112,12 @@ const app = new Hono()
           image,
         );
 
-        const arrayBuffer = await storage.getFilePreview(
+        const arrayBuffer = await storage.getFileView(
           IMAGES_BUCKET_ID,
           file.$id,
         );
 
-        uploadedImageUrl = `data:image/png;base64,${Buffer.from(arrayBuffer).toString("base64")}`;
+        uploadedImageUrl = `data:${image.type || "image/png"};base64,${Buffer.from(arrayBuffer).toString("base64")}`;
       }
 
       const workspace = await databases.createDocument(
@@ -177,12 +177,12 @@ const app = new Hono()
           image,
         );
 
-        const arrayBuffer = await storage.getFilePreview(
+        const arrayBuffer = await storage.getFileView(
           IMAGES_BUCKET_ID,
           file.$id,
         );
 
-        uploadedImageUrl = `data:image/png;base64,${Buffer.from(arrayBuffer).toString("base64")}`;
+        uploadedImageUrl = `data:${image.type || "image/png"};base64,${Buffer.from(arrayBuffer).toString("base64")}`;
       } else {
         uploadedImageUrl = image;
       } 

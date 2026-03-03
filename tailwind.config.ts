@@ -6,25 +6,12 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-	"./src/features/**/*.{js,ts,jsx,tsx,mdx}",
-
+    "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/hooks/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
   	extend: {
   		colors: {
-  			siemens: {
-  				DEFAULT: '#009999',
-  				50: '#e6fafa',
-  				100: '#b3f0f0',
-  				200: '#80e6e6',
-  				300: '#4dd9d9',
-  				400: '#1acdcd',
-  				500: '#009999',
-  				600: '#007a7a',
-  				700: '#005c5c',
-  				800: '#003d3d',
-  				900: '#001f1f',
-  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
