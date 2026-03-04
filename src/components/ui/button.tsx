@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-gradient-to-b from-blue-600 to-blue-700 text-primary-foreground hover:from-blue-700 hover:to-blue-700",
+          "bg-gradient-to-b from-siemens-500 to-siemens-600 text-primary-foreground hover:from-siemens-600 hover:to-siemens-700",
         destructive:
           "bg-gradient-to-b from-amber-600 to-amber-700 text-destructive-foreground hover:from-amber-700 hover:to-amber-700",
         outline:
@@ -19,7 +19,7 @@ const buttonVariants = cva(
           "bg-white text-black hover:bg-neutral-100",
         ghost: "border-transparent shadow-none hover:bg-accent hover:text-accent-foreground",
         muted: "bg-neutral-200 text-neutral-600 hover:bg-neutral-200/80",
-        teritary: "bg-blue-100 text-blue-600 border-transparent hover:bg-blue-200 shadow-none"
+        teritary: "bg-siemens-100 text-siemens-700 border-transparent hover:bg-siemens-200 shadow-none"
       },
       size: {
         default: "h-10 px-4 py-2",
